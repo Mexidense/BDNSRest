@@ -27,6 +27,8 @@ public class DownloadTest {
 			File file = new File(StringES.DESTINATION_FILE);
 			if(file.exists())
 				Assert.assertTrue(true);
+			else
+				Assert.assertTrue(false);
 			
 		} catch (Exception e) {
 			Assert.assertTrue(false);
